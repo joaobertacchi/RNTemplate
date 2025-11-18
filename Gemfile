@@ -14,3 +14,10 @@ gem 'bigdecimal'
 gem 'logger'
 gem 'benchmark'
 gem 'mutex_m'
+
+# Workaround for kconv issue:
+# https://github.com/callstack/react-native-builder-bob/issues/909
+# https://github.com/ckruse/CFPropertyList/issues/74
+gem "nkf"
+gem "base64"
+# -- end workaround
