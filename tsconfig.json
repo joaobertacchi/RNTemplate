@@ -8,5 +8,12 @@
   "exclude": [
     "**/node_modules",
     "**/Pods"
-  ]
+  ],
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "target": "ES6",
+    "paths": {
+      "@/*": ["./*"] // Add relative path
+    },
+  }
 }
