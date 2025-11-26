@@ -14,6 +14,12 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
+    // option disableScc set to workaround a parsing bug
+    // See: https://github.com/import-js/eslint-plugin-import/issues/3165#issuecomment-2834588613
+    'import/no-cycle': [
+      'error',
+      { maxDepth: 1, ignoreExternal: true, disableScc: true },
+    ],
     'import/order': [
       'error',
       {
