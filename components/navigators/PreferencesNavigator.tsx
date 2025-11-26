@@ -1,4 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import Preferences from '@/components/screens/Preferences';
 
 const Stack = createNativeStackNavigator();

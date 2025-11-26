@@ -5,12 +5,13 @@
  * @format
  */
 
-import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
 import '@/global.css';
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar, useColorScheme } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { NavigationContainer } from '@react-navigation/native';
+
 import RootNavigator from '@/components/navigators/RootNavigator';
+import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';

@@ -1,8 +1,9 @@
 import { createNativeBottomTabNavigator } from '@react-navigation/bottom-tabs/unstable';
+import { Platform } from 'react-native';
+
 import HomeNavigator from './HomeNavigator';
 import PreferencesNavigator from './PreferencesNavigator';
 import ResourceNavigator from './ResourcesNavigator';
-import { Platform } from 'react-native';
 
 const Tab = createNativeBottomTabNavigator();
 
